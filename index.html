@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Ejercicios DOM</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios del DOM</h1>
+    </header>
+
+    <main>
+      <section id="section-1">
+        <h3>Reloj Digital y Alarma Sonora</h3>
+
+        <span id="temporizador"></span>
+
+        <div class="btns">
+          <button id="btn-start-clock">Iniciar Reloj</button>
+          <button id="btn-stop-clock">Detener Reloj</button>
+          <button id="btn-start-alarm">Iniciar Alarma</button>
+          <button id="btn-stop-alarm">Detener Alarma</button>
+        </div>
+
+        <audio id="audio" src="" ></audio>
+      </section>
+
+      <section id="section-2">
+        <h3>Eventos del Teclado</h3>
+        <div class="pitch">
+          <div class="ball"></div>
+        </div>
+      </section>
+
+      <section id="section-3">
+        <h3>Cuenta Regresiva (countdown)</h3>
+
+        <div class="countdown">
+          <span id="days"></span>
+          <span id="hours"></span>
+          <span id="minutes"></span>
+          <span id="seconds"></span>
+        </div>
+      </section>
+
+      <section id="section-4">
+        <h3>Responsive con JavaScript</h3>
+
+        <div id="mobile"></div>
+
+        <div id="desktop"></div>
+      </section>
+
+      <section id="section-5">
+        <h3>Responsive Web Tester</h3>
+
+        <form class="form">
+          <input id="ipt-url" type="text" placeholder="URL">
+          <input id="ipt-width" type="number" placeholder="Ancho">
+          <input id="ipt-height" type="number" placeholder="Alto">
+          <button id="btn-open-web">Abrir</button>
+          <button id="btn-close-web">Cerrar</button>
+        </form>
+      </section>
+
+      <section id="section-6">
+        <h3>User Agent</h3>
+
+        <span id="user"></span>
+
+      </section>
+
+      <section id="section-7">
+        <h3>Detección de la Conexión</h3>
+      </section>
+
+
+      <section id="section-8">
+        <h3>Detección de dispositivos (WebCam)</h3>
+        <button id="fireWebCam">Iniciar WebCam</button>
+        <video src="" id="video"></video>
+      </section>
+      
+
+      <section id="section-9">
+        <h3>Geolocalización</h3>
+        <div id="currentLocation">
+        </div>
+      </section>
+
+    </main>
+
+    <div class="network network-offline d-none"></div>
+
+    <div id="menu" class="menu-close">
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="#section-1">Reloj Digital y Alarma Sonora</a></li>
+          <li class="nav__li"><a href="#section-2">Eventos del Teclado</a></li>
+          <li class="nav__li"><a href="#section-3">Cuenta Regresiva (countdown)</a></li>
+          <li class="nav__li"><a href="#section-4">Responsive con JavaScript</a></li>
+          <li class="nav__li"><a href="#section-5">Responsive Web Tester</a></li>
+          <li class="nav__li"><a href="#section-6">User Agent</a></li>
+          <li class="nav__li"><a href="#section-7">Detección de la Conexión</a></li>
+          <li class="nav__li"><a href="#section-8">Detección de dispositivos (WebCam, etc)</a></li>
+          <li class="nav__li"><a href="#section-9">Geolocalización</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="button-hamburguer">
+      <button id="btnOpenMenu" class="open">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+
+    <div class="btn-scroll no-visible">
+      <a href="#"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <div class="btn-theme">
+      <button class="moon">
+        <i class="bi bi-moon-fill"></i>
+        <i class="bi bi-brightness-high-fill"></i>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

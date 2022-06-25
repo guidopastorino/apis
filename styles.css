@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+header {
+  background: #f7df1e;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header > span {
+  font-size: 40px;
+  color: #222;
+  font-weight: bold;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section > h3 {
+  font-size: 25px;
+}
+
+/*  */
+
+.button-hamburguer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.button-hamburguer > button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background: #f7df1e;
+  color: #222;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 2px solid #222;
+  outline: none;
+}
+
+.button-hamburguer > button > i {
+  pointer-events: none;
+}
+
+.open > i:first-child {
+  display: block;
+}
+
+.open > i:last-child {
+  display: none;
+}
+
+.close > i:last-child {
+  display: block;
+}
+
+.close > i:first-child {
+  display: none;
+}
+
+/* menu styles */
+.menu-open {
+  left: 0;
+  opacity: 1;
+}
+
+.menu-close {
+  left: -100%;
+  opacity: 0.5;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  background: #222222de;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.3s;
+  z-index: 15;
+  overflow-y: auto;
+}
+
+#menu > .nav {
+  width: 100%;
+}
+
+#menu > .nav > .nav__ul {
+  width: 100%;
+  list-style: none;
+}
+
+#menu > .nav > .nav__ul > .nav__li {
+  width: 100%;
+}
+
+#menu > .nav > .nav__ul > .nav__li > a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #f7df1e;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#menu > .nav > .nav__ul > .nav__li > a:hover {
+  background: #f7df1e;
+  color: #222;
+}
+
+/*  */
+
+.btns > button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*  */
+
+.pitch{
+  width: 90%;
+  background: #222;
+  display: flex;
+  height: 70vh;
+}
+
+.pitch > .ball{
+  width: 4rem;
+  height: 4rem;
+  background: #f7df1e;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* btn scroll styles */
+
+.visible{
+  opacity: 1;
+  pointer-events: all;
+  transition: all .3s;
+}
+
+.no-visible{
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.btn-scroll{
+  position: fixed;
+  bottom: 20px;
+  right: 85px;
+  z-index: 20;
+}
+
+.btn-scroll > a{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background: #f7df1e;
+  color: #222;
+  font-size: 25px;
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid #222;
+  outline: none;
+}
+
+.btn-scroll > a > i{
+  margin: auto;
+}
+
+
+
+
+
+/*  */
+
+.btn-theme{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 20;
+}
+
+.btn-theme > button{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background: #f7df1e;
+  color: #222;
+  font-size: 27px;
+  border-radius: 50%;
+  border: 2px solid #222;
+  outline: none;
+}
+
+.btn-theme > button > i{
+  pointer-events: none;
+}
+
+
+/* Responsive reb tester */
+
+.form{
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form > *{
+  width: 100%;
+  padding: 5px;
+}
+
+
+
+
+
+/* online */
+
+.network{
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 1px 10px #00000067;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  font-size: 25px;
+  background: #000;
+}
+
+.network-online{
+  background: #00af17;
+}
+
+.network-offline{
+  background: #8b0000;
+}
+
+.d-none{
+  display: none;
+}
